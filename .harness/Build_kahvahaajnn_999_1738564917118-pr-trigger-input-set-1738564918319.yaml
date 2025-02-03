@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_kahvahaajnn_999_1738564917118-pr-trigger-input-set
+  identifier: Build_kahvahaajnn_999_1738564917118prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_kahvahaajnn_999_1738564917118
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
