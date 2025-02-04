@@ -3,7 +3,7 @@ import sqlite3
 default_admins = [
     (1, '1662672529', 1),
 ]
-token = '8016978575:AAGtZq2YIQKIdUuDsx-tb8APm5_SPystyTs'
+token = '7819992909:AAHfbmckp2vxVRCmu9hhFq42q_hWZfvu1HM'
 bot_name = '@Godxcheat1bot'
 bot_username = '@Godxcheat1bot'
 owner_username = '@GODxAloneBOY'
