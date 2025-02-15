@@ -3,11 +3,11 @@ import sqlite3
 default_admins = [
     (1, '1662672529', 1),
 ]
-token = '7819992909:AAHfbmckp2vxVRCmu9hhFq42q_hWZfvu1HM'
-bot_name = '@Godxcheat1bot'
-bot_username = '@Godxcheat1bot'
+token = '7140094105:AAEbc645NvvWgzZ5SJ3L8xgMv6hByfg2n_4'
+bot_name = '@aloneboyddos_bot'
+bot_username = '@aloneboyddos_bot'
 owner_username = '@GODxAloneBOY'
-channel_username = '@fyyffgggvvvgvvcc'
+channel_username = '@jsbananannanan'
 
 def initialize_db():
     conn = sqlite3.connect('bot_data.db')
