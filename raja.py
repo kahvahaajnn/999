@@ -8,7 +8,7 @@ import aiohttp
 import threading
 import random
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7749918794:AAFlgbWy2k9BTzJMPjFB1eJe7G4WUBniMrQ')
+bot = telebot.TeleBot('7819992909:AAHfbmckp2vxVRCmu9hhFq42q_hWZfvu1HM')
 
 
 # Admin user IDs
@@ -36,28 +36,20 @@ global_last_attack_time = None  # Global cooldown tracker
 
 # 🎯 Random Image URLs  
 image_urls = [
-    "https://envs.sh/g7a.jpg",
-    "https://envs.sh/g7O.jpg",
-    "https://envs.sh/g7_.jpg",
-    "https://envs.sh/gHR.jpg",
-    "https://envs.sh/gH4.jpg",
-    "https://envs.sh/gHU.jpg",
+    "https://4kwallpapers.com/anime/firefly-honkai-star-21360.html",
+    "https://4kwallpapers.com/anime/pretty-anime-girl-20823.html",
+    "https://www.freepik.com/free-photo/yasaka-pagoda-sannen-zaka-street-kyoto-japan_10695378.htm#fromView=keyword&page=1&position=6&uuid=1f06a853-07d0-46cc-b74b-e16432c69dd7&query=4k+Wallpaper+Anime",
+    "https://4kwallpapers.com/anime/purple-aesthetic-21313.html",
+    "https://www.freepik.com/free-photo/trees-park_1154242.htm#fromView=keyword&page=1&position=37&uuid=3b5d0e2b-2a91-4458-8cbc-80716997313d&query=Red+Anime+Wallpaper+4k",
+    "https://motionbgs.com/mountain-horizon",
     "https://envs.sh/gHl.jpg",
     "https://envs.sh/gH1.jpg",
     "https://envs.sh/gHk.jpg",
-    "https://envs.sh/68x.jpg",
-    "https://envs.sh/67E.jpg",
-    "https://envs.sh/67Q.jpg",
-    "https://envs.sh/686.jpg",
-    "https://envs.sh/68V.jpg",
-    "https://envs.sh/68-.jpg",
-    "https://envs.sh/Vwn.jpg",
-    "https://envs.sh/Vwe.jpg",
-    "https://envs.sh/VwZ.jpg",
-    "https://envs.sh/VwG.jpg",
-    "https://envs.sh/VwK.jpg",
-    "https://envs.sh/VwA.jpg",
-    "https://envs.sh/Vw_.jpg",
+    "https://motionbgs.com/spring-blossom-town",
+    "https://motionbgs.com/large-oak",
+    "https://motionbgs.com/motorcycle-parked",
+    "https://motionbgs.com/ripped-goku",
+    "https://moewalls.com/anime/red-eyes-anime-girl-live-wallpaper/",
     "https://envs.sh/Vwc.jpg"
 ]
 
