@@ -9,8 +9,8 @@
 #include <pthread.h>
 #include <errno.h>
 
-#define PAYLOAD_SIZE 65507    // Max UDP Payload Size
-#define RANDOM_STRING_SIZE 65500  // Max Random String Size
+#define PAYLOAD_SIZE 65507          // Max UDP Payload Size
+#define RANDOM_STRING_SIZE 65500    // Max Random String Size
 #define SOCKET_BUFFER_SIZE 1048576  // 1MB Buffer
 
 typedef struct {
@@ -25,7 +25,7 @@ void generate_random_string(char *buffer, size_t size) {
     for (size_t i = 0; i < size; i++) {
         buffer[i] = charset[rand() % (sizeof(charset) - 1)];
     }
-    buffer[size] = '\0'; 
+    buffer[size] = '\0';
 }
 
 // Function to send UDP packets
@@ -34,6 +34,7 @@ void* send_udp_packets(void* arg) {
     int sock;
     struct sockaddr_in server_addr;
     char *payload = malloc(PAYLOAD_SIZE);
+    int buffer_size = SOCKET_BUFFER_SIZE;  // ✅ FIXED: अब "&" properly काम करेगा
 
     if ((sock = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
         perror("Socket creation failed");
@@ -41,8 +42,8 @@ void* send_udp_packets(void* arg) {
     }
 
     // Increase Socket Buffer Size
-    setsockopt(sock, SOL_SOCKET, SO_RCVBUF, &SOCKET_BUFFER_SIZE, sizeof(SOCKET_BUFFER_SIZE));
-    setsockopt(sock, SOL_SOCKET, SO_SNDBUF, &SOCKET_BUFFER_SIZE, sizeof(SOCKET_BUFFER_SIZE));
+    setsockopt(sock, SOL_SOCKET, SO_RCVBUF, &buffer_size, sizeof(buffer_size));
+    setsockopt(sock, SOL_SOCKET, SO_SNDBUF, &buffer_size, sizeof(buffer_size));
 
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(params->port);
