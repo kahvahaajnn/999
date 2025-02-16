@@ -15,8 +15,8 @@ bot = telebot.TeleBot('7749918794:AAFlgbWy2k9BTzJMPjFB1eJe7G4WUBniMrQ')
 admin_id = ["1662672529"]
 
 # Group and channel details
-GROUP_ID = "-1002374071862"
-CHANNEL_USERNAME = "@rajaraj_0"
+GROUP_ID = "-1002356850946"
+CHANNEL_USERNAME = "@jsbananannanan"
 
 # Default cooldown and attack limits
 COOLDOWN_TIME = 30  # Cooldown in seconds
@@ -105,7 +105,7 @@ def handle_attack(message):
     command = message.text.split()
 
     if message.chat.id != int(GROUP_ID):
-        bot.reply_to(message, f"🚫 **𝐘𝐄 𝐁𝐎𝐓 𝐒𝐈𝐑𝐅 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐂𝐇𝐀𝐋𝐄𝐆𝐀!** ❌\n🔗 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰: {https://t.me/+PbJPDGt1VFhkMzVl}")
+        bot.reply_to(message, f"🚫 **𝐘𝐄 𝐁𝐎𝐓 𝐒𝐈𝐑𝐅 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐂𝐇𝐀𝐋𝐄𝐆𝐀!** ❌\n🔗 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰: {https://t.me/aloneboyisnaj}")
         return
 
     if not is_user_in_channel(user_id):
@@ -284,7 +284,7 @@ def welcome_start(message):
 ⚡ 𝐁𝐄 𝐓𝐇𝐄 𝐊𝐈𝐍𝐆, 𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐄 𝐓𝐇𝐄 𝐖𝐄𝐁!  
 
 🔗 **𝐓𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭, 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰:**  
-👉 [𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙂𝙧𝙤𝙪𝙥](https://t.me/+PbJPDGt1VFhkMzVl) 🚀🔥"""
+👉 [𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙂𝙧𝙤𝙪𝙥](https://t.me/aloneboyisnaj) 🚀🔥"""
     
     bot.reply_to(message, response, parse_mode="Markdown")
 # Function to reset daily limits automatically
